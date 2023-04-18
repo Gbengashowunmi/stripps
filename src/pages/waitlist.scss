@@ -1,0 +1,108 @@
+h1 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+h3 {
+  color: black;
+  font-size: 1.8rem;
+}
+.waitlist_wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem 3rem;
+
+  .description {
+    .image {
+      width: 70%;
+      height: fit-content;
+      margin: auto;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+  .form {
+    background-color: white;
+  }
+  .waitlist_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+    height: fit-content;
+  }
+  button {
+    width: fit-content;
+    padding: 1rem;
+    background-color: var(--clr-secondary);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin: 2rem auto;
+  }
+  button:hover {
+    background-color: black;
+    color: var(--clr-secondary);
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    color: black;
+    font-size: 1.2rem;
+  }
+  .waitlist_wrapper {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+    .description {
+      width: 90%;
+      margin: auto;
+      .image {
+        width: 90%;
+      }
+    }
+    .waitlist_form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .waitlist_wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    .description {
+      .image {
+      }
+
+    }
+    .form {
+      background-color: white;
+    }
+    .waitlist_form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem 0;
+    }
+  }
+}

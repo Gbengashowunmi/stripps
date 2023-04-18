@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color:var(--clr-background-grey) ;
+  color: var(--clr-secondary);
+}
+
+:root {
+  --clr-primary: #CDD2FD;
+  --clr-secondary: #05797E;
+  --clr-primary-light: #2843f5;
+  --clr-white: #fff;
+  --clr-yellow: #FFCE31;
+  --clr-green: #49e70a;
+  --clr-background-grey:rgb(240, 244, 247);
+  --clr-border-shadow: rgb(161, 161, 161);
+--clr-reddish-brown:rgb(196, 4, 4);
+--clr-orange-red: orangered;
+--clr-dirty-white:#C4C4C4;
+--clr-dirty-white-text:#787878;
+--clr-light-blue:#42A5F5;
+--clr-cyan:#CCEBC9;
+}
